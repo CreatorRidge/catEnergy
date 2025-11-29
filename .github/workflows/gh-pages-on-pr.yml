@@ -44,3 +44,4 @@ jobs:
         with:
           folder: ./build
           branch: gh-pages
+          target-folder: ${{ github.event.pull_request.number }}
