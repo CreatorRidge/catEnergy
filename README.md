@@ -1,4 +1,4 @@
-# Личный проект «{{projectTitle}}»
+# Личный проект «Cat Energy»
 
 * Студент: [Риджина Романова](https://htmlacademy.ru/profile/creatorridge).
 * Наставник: `Неопознанный енот`.
