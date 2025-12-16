@@ -1,7 +1,7 @@
-# Личный проект «{{projectTitle}}»
+# Личный проект «Cat Energy»
 
-* Студент: [{{userName}}]({{userProfile}}).
-* Наставник: `Неизвестно`.
+* Студент: [Риджина Романова](https://htmlacademy.ru/profile/creatorridge).
+* Наставник: `Неопознанный енот`.
 
 ---
 
