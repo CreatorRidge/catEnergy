@@ -5,7 +5,7 @@
 
 ---
 
-**Обратите внимание, что папка с вашими исходными файлами для работы над проектом — `source/`.**
+**Папка с исходными файлами для работы над проектом — `source/`.**
 
 _Не удаляйте и не обращайте внимание на файлы и папки:_<br>
 _`.github`, `.editorconfig`, `.eslintrc`, `.gitattributes`, `.gitignore`, `.linthtmlrc`, `.stylelintrc`, `.gulpfile.js`, `svgo.config.js` `package.json`, `package-lock.json`._
@@ -14,25 +14,9 @@ _`.github`, `.editorconfig`, `.eslintrc`, `.gitattributes`, `.gitignore`, `.lint
 
 ### Памятка
 
-#### 1. Зарегистрируйтесь на Гитхабе
+#### 1. Work Showcase
 
-Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
-
-#### 2. Создайте форк
-
-[Откройте мастер-репозиторий]({{homepage}}) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
-
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808133-3a7ace00-a190-11e9-9d29-401b02036a9c.jpg">
-
-Получится вот так:
-
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808135-3a7ace00-a190-11e9-9a8d-7390b3784c65.jpg">
-
-#### 3. Клонируйте репозиторий на свой компьютер
-
-Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии.
-
-#### 4. Начинайте обучение!
+Portfolio Website [creatorridge.website](https://creatorridge.website).
 
 ---
 
