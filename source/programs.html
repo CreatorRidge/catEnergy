@@ -6,13 +6,21 @@
   <title>Мяу‑энергия: Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo logo" href="index.html">
-      <img class="logo__image logo__image--icon" src="images/logotype-phone.svg" alt="Мяу‑энергия: Cat Energy" width="33" height="38">
+      <picture>
+        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logotype-desktop.svg">
+        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logotype-tablet.svg">
+        <img class="logo__image logo__image--icon" src="images/logotype-mobile.svg" alt="Мяу‑энергия: Cat Energy" width="33" height="38">
+      </picture>
       <img class="logo__image logo__image--text" src="images/logotype-text.svg" alt="Cat Energy" width="101" height="18">
     </a>
     <nav class="main-nav">
@@ -115,7 +123,11 @@
       <div class="main-footer__contacts contacts">
         <b class="contacts__title">приглашаем к сотрудничеству дилеров!</b>
         <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        <img class="contacts__map" src="images/map.jpg" alt="map" width="320" height="362">
+        <picture>
+          <source width="1440" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="images/location-desktop@1x.jpg 1x, images/location-desktop@2x.jpg 2x">
+          <source width="768" height="400" type="image/jpeg" media="(min-width: 768px)" srcset="images/location-tablet@1x.jpg 1x, images/location-tablet@2x.jpg 2x">
+          <img class="contacts__map" src="images/location-mobile@1x.jpg" srcset="images/location-mobile@2x.jpg 2x" alt="map" width="320" height="362">
+        </picture>
       </div>
       <div class="main-footer__social social">
         <a class="logo" href="index.html">
