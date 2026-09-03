@@ -1,0 +1,21 @@
+.programm {
+  font-family: $secondary-font;
+}
+
+.programm__title {
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.programm__description {
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.programm__note {
+  font-family: $primary-font;
+  line-height: 16px;
+  text-align: center;
+  color: #000000;
+}

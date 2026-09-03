@@ -1,0 +1,32 @@
+.case {
+  background-color: #eaeaea;
+}
+
+.case__title {
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.case__caption {
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+}
+
+.case__description {
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+}
+
+.case__result {
+  font-family: $secondary-font;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
