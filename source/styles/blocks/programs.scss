@@ -1,0 +1,20 @@
+.programs__item {
+  background-color: $basic-grey;
+}
+
+.programs__caption {
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.programs__link {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+}

@@ -1,0 +1,17 @@
+.about {
+  font-family: $secondary-font;
+  color: #ffffff;
+  background: rgba(104, 183, 56, 0.85);
+}
+
+.about__title {
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.about__slogan {
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}

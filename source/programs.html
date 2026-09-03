@@ -15,7 +15,7 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo logo" href="index.html">
+    <a class="main-header__logo logo" href="#">
       <picture>
         <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logotype-desktop.svg">
         <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logotype-tablet.svg">
@@ -24,12 +24,12 @@
       <img class="logo__image logo__image--text" src="images/logotype-text.svg" alt="Cat Energy" width="101" height="18">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle button-burger" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="index.html">главная</a></li>
-          <li class="main-nav__item"><a href="catalog.html">каталог продукции</a></li>
-          <li class="main-nav__item main-nav__item--current"><a href="#">подбор программы</a></li>
+          <li class="main-nav__item main-nav__item--current"><a class="main-nav__link" href="#">главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">каталог продукции</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="programs.html">подбор программы</a></li>
         </ul>
       </div>
     </nav>
@@ -55,7 +55,7 @@
             <ul class="programm-form__list">
               <li class="programm-form__item">
                 <label class="programm-form__radio control">
-                  <input class="visually-hidden control-input" type="radio" name="programm-group" value="Weight-loss" checked>
+                  <input class="visually-hidden control__input" type="radio" name="programm-group" value="Weight-loss" checked>
                   <span class="control-mark"></span>
                   <span class="control-label">Похудение</span>
                 </label>
@@ -82,7 +82,7 @@
           <fieldset class="programm-form__group">
             <legend class="programm-form__title">Комментарий</legend>
             <label class="visually-hidden" for="programm-comment">Оставьте ваш комментарий</label>
-            <textarea class="programm-form__label" name="programm-comment" id="programm-comment" placeholder="Расскажите обо всех повАдках кота"></textarea>
+            <textarea class="programm-form__input" name="programm-comment" id="programm-comment" placeholder="Расскажите обо всех повАдках кота"></textarea>
           </fieldset>
           <fieldset class="programm-form__group">
             <legend class="programm-form__title">Дополнительно</legend>
@@ -111,7 +111,7 @@
               </li>
             </ul>
           </fieldset>
-          <button class="programm-form__button button--primary" type="submit">отправить заявку</button>
+          <button class="programm-form__button button button--primary" type="submit">отправить заявку</button>
         </form>
         <p class="programm__note">* — Обязательные поля</p>
       </div>
@@ -130,19 +130,19 @@
         </picture>
       </div>
       <div class="main-footer__social social">
-        <a class="logo" href="index.html">
+        <a class="social__logo logo" href="#">
           <img src="images/logotype-text.svg" alt="Cat Energy" width="101" height="18">
         </a>
-        <b class="social__title">Мы в социальных сетях.</b>
+        <b class="visually-hidden">Мы в социальных сетях.</b>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Мы в Ютубе</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в Телеграме</span></a>
           </li>
         </ul>
       </div>
