@@ -2,5 +2,28 @@
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 40px;
-  color: #000000;
+  color: $black;
+}
+
+.features__item {
+  height: 60px;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+
+  &--substances {
+    background-image: url("../../icons/stack.svg#features1");
+  }
+
+  &--powder {
+    background-image: url("../../icons/stack.svg#features2");
+  }
+
+  &--mealtime {
+    background-image: url("../../icons/stack.svg#features3");
+  }
+
+  &--period {
+    background-image: url("../../icons/stack.svg#features4");
+  }
 }

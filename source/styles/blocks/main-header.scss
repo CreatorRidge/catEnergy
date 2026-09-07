@@ -1,5 +1,23 @@
-.header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+.main-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-header__logo {
+  display: flex;
+  flex-direction: row;
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.main-header__nav {
+  margin-left: auto;
 }

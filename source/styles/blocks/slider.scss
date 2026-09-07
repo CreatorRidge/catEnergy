@@ -1,0 +1,62 @@
+.slider {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+}
+
+.slider__control-button {
+  position: relative;
+  display: block;
+  padding: 0;
+  width: 4px;
+  height: 100%;
+  background-color: $accent-grey;
+  border: none;
+
+  &::before,
+  &::after {
+    @include center-xy;
+  }
+
+  &::before {
+    @include pseudo-block(40px, 40px);
+    display: block;
+    background-color: $white;
+    border: 2px solid $accent-grey;
+    border-radius: 50%;
+  }
+
+  &::after {
+    @include pseudo-block(24px, 18px);
+    background-color: $accent-grey;
+    mask-image: url("../../icons/stack.svg#slider");
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+  }
+
+  &:is(:hover, :focus, :focus-visible) {
+    background-color: $accent-green;
+  }
+
+  &:is(:hover, :focus, :focus-visible)::before {
+    border-color: $accent-green;
+  }
+
+  &:is(:hover, :focus, :focus-visible)::after {
+    background-color: $accent-green;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    opacity: 0.6;
+  }
+
+  &:active::before {
+    border-color: #5eaa2f;
+  }
+
+  &:active::after {
+    background-color: #5eaa2f;
+  }
+}

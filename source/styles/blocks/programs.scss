@@ -1,20 +1,52 @@
 .programs__item {
+  position: relative;
   background-color: $basic-grey;
+
+  &--weight-loss::before {
+    @include pseudo-decor(50px, 53px, url("../../icons/stack.svg#program1"));
+    top: 21px;
+    left: 20px;
+  }
+
+  &--weight-gain::before {
+    @include pseudo-decor(67px, 50px, url("../../icons/stack.svg#program2"));
+    top: 24px;
+    left: 13px;
+  }
 }
 
 .programs__caption {
+  margin: 30px 0 0 90px;
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  color: #000000;
+  color: $black;
 }
 
 .programs__link {
+  position: relative;
+  height: 24px;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #000000;
+  color: $black;
+
+  &::after {
+    @include pseudo-decor(24px, 12px, url("../../icons/stack.svg#arrow"));
+    top: 6px;
+    right: -39px;
+    transition: transform 0.3s linear;
+    transform-origin: left center;
+  }
+
+  &:is(:hover, :active, :focus, :focus-visible)::after {
+    transform: scaleX(1.35);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

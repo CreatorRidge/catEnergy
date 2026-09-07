@@ -1,6 +1,32 @@
 .copyright__link {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
   color: $basic-color-text;
+
+  &::before {
+    display: block;
+    order: 2;
+    width: 27px;
+    height: 34px;
+    background-color: $accent-grey;
+    mask-image: url("../../icons/stack.svg#htmlacademy-logo");
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    transition: background-color 0.2s ease;
+    content: "";
+  }
+
+  &:is(:hover, :active, :focus, :focus-visible)::before {
+    background-color: $accent-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

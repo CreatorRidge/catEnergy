@@ -5,17 +5,17 @@
 .programm__title {
   font-size: 36px;
   line-height: 36px;
-  color: #000000;
+  color: $black;
 }
 
 .programm__description {
   text-transform: uppercase;
-  color: #000000;
+  color: $black;
 }
 
 .programm__note {
   font-family: $primary-font;
   line-height: 16px;
   text-align: center;
-  color: #000000;
+  color: $black;
 }

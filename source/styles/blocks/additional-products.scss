@@ -2,5 +2,11 @@
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
-  color: #000000;
+  color: $black;
+}
+
+.additional-products__special-deal {
+  height: 290px;
+  background: url("../../images/catalog/background-catalog-mobile@1x.jpg") center no-repeat;
+  background-size: contain;
 }

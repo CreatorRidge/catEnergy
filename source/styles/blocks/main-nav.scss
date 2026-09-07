@@ -5,7 +5,51 @@
   text-transform: uppercase;
 }
 
+.main-nav__toggle {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  background-color: transparent;
+  background-image: url("../../icons/stack.svg#burger");
+  border: none;
+  cursor: pointer;
+
+  &.main-nav__toggle--close {
+    background-image: none;
+
+    &::after,
+    &::before {
+      @include center-y;
+      position: absolute;
+      width: 24.76px;
+      height: 1.5px;
+      left: 0;
+      background-color: $black;
+      content: "";
+    }
+
+    &::after {
+      transform: rotate(46.64deg);
+    }
+
+    &::before {
+      transform: rotate(-46.64deg);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .main-nav__link {
   text-decoration: none;
-  color: #000000;
+  color: $black;
 }
