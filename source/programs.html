@@ -15,21 +15,21 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo logo" href="#">
+    <a class="main-header__logo logo" href="index.html">
       <picture>
         <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logotype-desktop.svg">
         <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logotype-tablet.svg">
-        <img class="logo__image logo__image--icon" src="images/logotype-mobile.svg" alt="Мяу‑энергия: Cat Energy" width="33" height="38">
+        <img class="main-header__logo--icon logo__image logo__image--icon" src="images/logotype-mobile.svg" alt="Мяу‑энергия: Cat Energy" width="33" height="38">
       </picture>
-      <img class="logo__image logo__image--text" src="images/logotype-text.svg" alt="Cat Energy" width="101" height="18">
+      <img class="main-header__logo--text" src="images/logotype-text.svg" alt="Cat Energy" width="101" height="18">
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <nav class="main-header__nav main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden main-nav__toggle-text">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--current"><a class="main-nav__link" href="#">главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="index.html">главная</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">каталог продукции</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="programs.html">подбор программы</a></li>
+          <li class="main-nav__item main-nav__item--current"><a class="main-nav__link" href="#">подбор программы</a></li>
         </ul>
       </div>
     </nav>
@@ -44,11 +44,11 @@
           <fieldset class="programm-form__group">
             <legend class="visually-hidden">Данные кота</legend>
             <label class="programm-form__label" for="programm-name">ИМЯ:*</label>
-            <input class="programm-form__input" type="text" name="programm-name" id="programm-name" placeholder="барсик" required>
+            <input class="programm-form__input field" type="text" name="programm-name" id="programm-name" placeholder="барсик" required>
             <label class="programm-form__label" for="programm-weight">Вес (кг):*</label>
-            <input class="programm-form__input" type="number" name="programm-weight" id="programm-weight" placeholder="7" required>
+            <input class="programm-form__input field" type="number" name="programm-weight" id="programm-weight" placeholder="7" required>
             <label class="programm-form__label" for="programm-age">Возраст (лет):</label>
-            <input class="programm-form__input" type="number" name="programm-age" id="programm-age" placeholder="7">
+            <input class="programm-form__input field" type="number" name="programm-age" id="programm-age" placeholder="7">
           </fieldset>
           <fieldset class="programm-form__group">
             <legend class="visually-hidden">Цель программы</legend>
@@ -59,11 +59,15 @@
                   <span class="control-mark"></span>
                   <span class="control-label">Похудение</span>
                 </label>
+              </li>
+              <li class="programm-form__item">
                 <label class="programm-form__radio control">
                   <input class="visually-hidden control-input" type="radio" name="programm-group" value="Weight-gain">
                   <span class="control-mark"></span>
                   <span class="control-label">Набор массы</span>
                 </label>
+              </li>
+              <li class="programm-form__item">
                 <label class="programm-form__radio control">
                   <input class="visually-hidden control-input" type="radio" name="programm-group" value="advice">
                   <span class="control-mark"></span>
@@ -75,14 +79,14 @@
           <fieldset class="programm-form__group">
             <legend class="programm-form__title">Контактные данные (владельца кота)</legend>
             <label class="programm-form__label" for="programm-email">E-mail:*</label>
-            <input class="programm-form__input" type="email" name="programm-email" id="programm-email" placeholder="kuklachev@gmail.com" required>
+            <input class="programm-form__input programm-form__input--email field" type="email" name="programm-email" id="programm-email" placeholder="kuklachev@gmail.com" required>
             <label class="programm-form__label" for="programm-phone">Телефон:*</label>
-            <input class="programm-form__input" type="number" name="programm-phone" id="programm-phone" placeholder="8 (960) 900-60-90" required>
+            <input class="programm-form__input programm-form__input--phone field" type="tel" name="programm-phone" id="programm-phone" placeholder="8 (960) 900-60-90" required>
           </fieldset>
           <fieldset class="programm-form__group">
             <legend class="programm-form__title">Комментарий</legend>
             <label class="visually-hidden" for="programm-comment">Оставьте ваш комментарий</label>
-            <textarea class="programm-form__input" name="programm-comment" id="programm-comment" placeholder="Расскажите обо всех повАдках кота"></textarea>
+            <textarea class="programm-form__input field" name="programm-comment" id="programm-comment" placeholder="Расскажите обо всех повАдках кота"></textarea>
           </fieldset>
           <fieldset class="programm-form__group">
             <legend class="programm-form__title">Дополнительно</legend>
@@ -130,28 +134,26 @@
         </picture>
       </div>
       <div class="main-footer__social social">
-        <a class="social__logo logo" href="#">
-          <img src="images/logotype-text.svg" alt="Cat Energy" width="101" height="18">
-        </a>
+        <a class="social__logo" href="#"><span class="visually-hidden">Cat Energy</span></a>
         <b class="visually-hidden">Мы в социальных сетях.</b>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a>
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Мы в Вконтакте</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Мы в Ютубе</span></a>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Мы в Ютубе</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в Телеграме</span></a>
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Мы в Телеграме</span></a>
           </li>
         </ul>
       </div>
       <div class="main-footer__copyright copyright">
         <b class="visually-hidden">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          HTML Academy
-          <img class="copyright__logo" src="images/htmlacademy-logo.svg" alt="htmlacademy logo" width="27" height="34">
-        </a>
+        <a class="copyright__link" href="https://htmlacademy.ru">HTML Academy</a>
       </div>
     </div>
   </footer>

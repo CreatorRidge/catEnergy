@@ -1,3 +1,61 @@
+.social__logo {
+  display: block;
+  width: 101px;
+  height: 18px;
+  background-color: #111111;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-image: url("../../icons/stack.svg#catenergy-logo");
+  mask-size: contain;
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    background-color: #3e3e3e;
+  }
+
+  &:active {
+    background-color: #6b6b6b;
+  }
+}
+
+.social__item {
+  width: 28px;
+  height: 22px;
+}
+
 .social__link {
-  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: $accent-grey;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  transition: background-color 0.2s ease;
+
+  &--vkontakte {
+    mask-image: url("../../icons/stack.svg#vkontakte");
+    mask-size: 26.97px 17px;
+  }
+
+  &--youtube {
+    mask-image: url("../../icons/stack.svg#youtube");
+    mask-size: 24px 18.68px;
+  }
+
+  &--telegram {
+    mask-image: url("../../icons/stack.svg#telegram");
+    mask-size: 19.7px 17.07px;
+  }
+
+  &:hover,
+  &:focus,
+  &:focus-visible,
+  &:active {
+    background-color: $accent-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

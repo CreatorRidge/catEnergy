@@ -1,0 +1,31 @@
+.field {
+  padding: 14px 15px;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $basic-color-text;
+  border: 1px solid #e7e7e7;
+
+  &::placeholder {
+    color: $basic-color-text;
+  }
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus,
+  &:focus-visible {
+    border-width: 2px;
+    border-color: $basic-color-text;
+    outline: 2px solid $basic-color-text;
+    outline-offset: -2px;
+  }
+
+  &.field--error {
+    border-width: 2px;
+    border-color: $danger-color;
+  }
+}

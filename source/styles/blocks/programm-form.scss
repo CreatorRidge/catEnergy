@@ -1,7 +1,7 @@
 .programm-form__title {
   font-size: 24px;
   line-height: 26px;
-  color: #000000;
+  color: $black;
 }
 
 .programm-form__label {
@@ -11,12 +11,17 @@
 }
 
 .programm-form__input {
-  padding: 14px 15px;
-  font-family: $secondary-font;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: $basic-color-text;
-  border: 1px solid #e7e7e7;
-}
+  width: 100%;
+  background-position: right 15px center;
+  background-repeat: no-repeat;
 
+  &--email {
+    background-image: url("../../icons/stack.svg#email");
+    background-size: 17px 13px;
+  }
+
+  &--phone {
+    background-image: url("../../icons/stack.svg#phone");
+    background-size: 17px 13px;
+  }
+}

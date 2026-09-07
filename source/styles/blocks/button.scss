@@ -2,20 +2,38 @@
   padding: 10px 44px;
   font-family: $secondary-font;
   font-size: 16px;
-  font-weight: 400;
   line-height: 20px;
+  font-weight: 400;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   border: none;
-}
 
-.button--primary {
-  color: #ffffff;
-  background-color: $accent-green;
-}
+  &--primary {
+    color: $white;
+    background-color: $accent-green;
 
-.button--secondary {
-  color: $basic-color-text;
-  background-color: $basic-grey;
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      background-color: #5eaa2f;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #5eaa2f;
+    }
+  }
+
+  &--secondary {
+    color: $basic-color-text;
+    background-color: $basic-grey;
+
+    &:hover,
+    &:focus,
+    &:focus-visible,
+    &:active {
+      background-color: #ebebeb;
+    }
+  }
 }
