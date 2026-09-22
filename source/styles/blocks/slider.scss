@@ -6,7 +6,6 @@
 
 .slider__control-button {
   position: relative;
-  display: block;
   padding: 0;
   width: 4px;
   height: 100%;
@@ -48,15 +47,15 @@
   }
 
   &:active {
-    background-color: #5eaa2f;
+    background-color: $interaction-green;
     opacity: 0.6;
   }
 
   &:active::before {
-    border-color: #5eaa2f;
+    border-color: $interaction-green;
   }
 
   &:active::after {
-    background-color: #5eaa2f;
+    background-color: $interaction-green;
   }
 }

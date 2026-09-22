@@ -4,10 +4,65 @@
   color: $black;
 }
 
+.subscription__wrapper {
+  padding: 40px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 80px 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    margin: auto;
+    padding: 96px 0 104px;
+  }
+}
+
 .subscription__title {
+  margin: 0;
   font-size: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+  }
 }
 
 .subscription__description {
+  margin: 0;
+  margin-top: 32px;
   font-size: 16px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 66px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 72px;
+  }
+}
+
+.subscription__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 752px;
+    margin: 24px auto 0;
+  }
 }

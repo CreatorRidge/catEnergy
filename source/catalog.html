@@ -25,7 +25,7 @@
     </a>
     <nav class="main-header__nav main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden main-nav__toggle-text">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
+      <div class="main-nav__wrapper main-nav__wrapper--closed">
         <ul class="main-nav__list">
           <li class="main-nav__item"><a class="main-nav__link" href="index.html">главная</a></li>
           <li class="main-nav__item main-nav__item--current"><a class="main-nav__link" href="#">каталог продукции</a></li>
@@ -233,7 +233,7 @@
           <li class="catalog__item catalog__item--show-more product">
             <h3 class="product__title">Показать еще 100500 товаров</h3>
             <p class="product__text">На самом деле вкусов гораздо больше!</p>
-            <button class="product__link button button--secondary" type="button">показать все</button>
+            <button class="product__link button button--secondary" type="button">показать&nbsp;все</button>
           </li>
         </ul>
       </div>
@@ -241,42 +241,47 @@
     <section class="additional-products">
       <div class="additional-products__wrapper">
         <h2 class="additional-products__title">Дополнительные товары</h2>
-        <ul class="additional-products__list">
-          <li class="additional-products__item addon">
-            <h3 class="addon__title">Сахарозаменитель</h3>
-            <dl class="addon__list">
-              <dt class="addon__size">1 упаковка (100 г)</dt>
-              <dd class="addon__price">200 ₽</dd>
-            </dl>
-            <a class="addon__link button button--primary" href="#">заказать</a>
-          </li>
-          <li class="additional-products__item addon">
-            <h3 class="addon__title">питьевая вода</h3>
-            <dl class="addon__list">
-              <dt class="addon__size">5 литров</dt>
-              <dd class="addon__price">50 ₽</dd>
-            </dl>
-            <a class="addon__link button button--primary" href="#">заказать</a>
-          </li>
-          <li class="additional-products__item addon">
-            <h3 class="addon__title">молоко</h3>
-            <dl class="addon__list">
-              <dt class="addon__size">1 литр</dt>
-              <dd class="addon__price">100 ₽</dd>
-            </dl>
-            <a class="addon__link button button--primary" href="#">заказать</a>
-          </li>
-          <li class="additional-products__item addon">
-            <h3 class="addon__title">витамины</h3>
-            <dl class="addon__list">
-              <dt class="addon__size">1 упаковка (30 г)</dt>
-              <dd class="addon__price">300 ₽</dd>
-            </dl>
-            <a class="addon__link button button--primary" href="#">заказать</a>
-          </li>
-        </ul>
-        <div class="additional-products__special-deal offer">
-          <p class="offer__description">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
+        <div class="additional-products__container">
+          <ul class="additional-products__list">
+            <li class="additional-products__item addon">
+              <h3 class="addon__title">Сахарозаменитель</h3>
+              <dl class="addon__list">
+                <dt class="addon__size">1 упаковка (100 г)</dt>
+                <dd class="addon__price">200 ₽</dd>
+              </dl>
+              <a class="addon__link button button--primary" href="#">заказать</a>
+            </li>
+            <li class="additional-products__item addon">
+              <h3 class="addon__title">питьевая вода</h3>
+              <dl class="addon__list">
+                <dt class="addon__size">5 литров</dt>
+                <dd class="addon__price">50 ₽</dd>
+              </dl>
+              <a class="addon__link button button--primary" href="#">заказать</a>
+            </li>
+            <li class="additional-products__item addon">
+              <h3 class="addon__title">молоко</h3>
+              <dl class="addon__list">
+                <dt class="addon__size">1 литр</dt>
+                <dd class="addon__price">100 ₽</dd>
+              </dl>
+              <a class="addon__link button button--primary" href="#">заказать</a>
+            </li>
+            <li class="additional-products__item addon">
+              <h3 class="addon__title">витамины</h3>
+              <dl class="addon__list">
+                <dt class="addon__size">1 упаковка (30 г)</dt>
+                <dd class="addon__price">300 ₽</dd>
+              </dl>
+              <a class="addon__link button button--primary" href="#">заказать</a>
+            </li>
+          </ul>
+          <div class="additional-products__special-deal offer">
+            <svg class="offer__icon" width="78" height="80" viewBox="0 0 78 80">
+              <use href="../../icons/stack.svg#gift"></use>
+            </svg>
+            <p class="offer__description">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
+          </div>
         </div>
       </div>
     </section>
@@ -295,38 +300,43 @@
   </main>
 
   <footer class="main-footer">
-    <div class="main-footer__wrapper">
-      <div class="main-footer__contacts contacts">
-        <b class="contacts__title">приглашаем к сотрудничеству дилеров!</b>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        <picture>
-          <source width="1440" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="images/location-desktop@1x.jpg 1x, images/location-desktop@2x.jpg 2x">
-          <source width="768" height="400" type="image/jpeg" media="(min-width: 768px)" srcset="images/location-tablet@1x.jpg 1x, images/location-tablet@2x.jpg 2x">
-          <img class="contacts__map" src="images/location-mobile@1x.jpg" srcset="images/location-mobile@2x.jpg 2x" alt="map" width="320" height="362">
-        </picture>
+    <div class="main-footer__contacts contacts">
+      <div class="contacts__wrapper">
+        <div class="contacts-container">
+          <b class="contacts__title">приглашаем к&nbsp;сотрудничеству дилеров!</b>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8
+            <span class="contacts__address-city">Санкт-Петербург</span>
+          </p>
+        </div>
       </div>
-      <div class="main-footer__social social">
-        <a class="social__logo" href="#"><span class="visually-hidden">Cat Energy</span></a>
-        <b class="visually-hidden">Мы в социальных сетях.</b>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">Мы в Вконтакте</span></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">Мы в Ютубе</span></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Мы в Телеграме</span></a>
-          </li>
-        </ul>
-      </div>
-      <div class="main-footer__copyright copyright">
-        <b class="visually-hidden">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru">HTML Academy</a>
-      </div>
+    </div>
+    <div class="main-footer__social social">
+      <ul class="social__wrapper">
+        <li class="social__section social__section--logo">
+          <a class="social__logo" href="index.html"><span class="visually-hidden">Cat Energy</span></a>
+        </li>
+        <li class="social__section social__section--links">
+          <b class="visually-hidden">Мы в социальных сетях.</b>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Мы в Вконтакте</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Мы в Ютубе</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Мы в Телеграме</span></a>
+            </li>
+          </ul>
+        </li>
+        <li class="social__section social__section--copyright">
+          <b class="visually-hidden">Разработано:</b>
+          <a class="social__copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
+        </li>
+      </ul>
     </div>
   </footer>
 </body>

@@ -16,12 +16,12 @@
     &:hover,
     &:focus,
     &:focus-visible {
-      background-color: #5eaa2f;
+      background-color: $interaction-green;
     }
 
     &:active {
       color: rgba(255, 255, 255, 0.3);
-      background-color: #5eaa2f;
+      background-color: $interaction-green;
     }
   }
 
@@ -35,5 +35,11 @@
     &:active {
       background-color: #ebebeb;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 65px;
+    font-size: 20px;
+    line-height: 26px;
   }
 }
