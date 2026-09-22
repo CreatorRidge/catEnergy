@@ -1,7 +1,56 @@
+.social__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 20px;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 55px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    margin: auto;
+    padding: 66px 0;
+  }
+}
+
+.social__section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0 19px;
+  border-bottom: 1px solid $divider-grey;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &--logo {
+    @media (min-width: $tablet-width) {
+      justify-content: flex-start;
+      min-width: 163px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    width: auto;
+    height: 37px;
+    padding: 0;
+    border-bottom: none;
+  }
+}
+
 .social__logo {
   display: block;
-  width: 101px;
-  height: 18px;
+  width: 128px;
+  height: 24px;
   background-color: #111111;
   mask-position: center;
   mask-repeat: no-repeat;
@@ -17,6 +66,15 @@
   &:active {
     background-color: #6b6b6b;
   }
+}
+
+.social__list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .social__item {
@@ -57,5 +115,44 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+.social__copyright-link {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: $basic-color-text;
+
+  &::before {
+    display: block;
+    order: 2;
+    width: 27px;
+    height: 34px;
+    background-color: $accent-grey;
+    mask-image: url("../../icons/stack.svg#htmlacademy-logo");
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    transition: background-color 0.2s ease;
+    content: "";
+  }
+
+  &:is(:hover, :active, :focus, :focus-visible)::before {
+    background-color: $accent-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    gap: 23px;
+    justify-content: flex-start;
+    width: auto;
   }
 }

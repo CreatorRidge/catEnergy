@@ -1,45 +1,162 @@
+.programs__wrapper {
+  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    margin: auto;
+    padding: 0;
+    padding-top: 82px;
+  }
+}
+
+.programs__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 80px;
+  }
+}
+
 .programs__item {
   position: relative;
+  padding: 18px 20px;
   background-color: $basic-grey;
 
   &--weight-loss::before {
     @include pseudo-decor(50px, 53px, url("../../icons/stack.svg#program1"));
     top: 21px;
     left: 20px;
+
+    @media (min-width: $tablet-width) {
+      top: 81px;
+      right: 63px;
+      left: auto;
+      width: 200px;
+      height: 211px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 41px;
+      right: auto;
+      left: 52px;
+      width: 100px;
+      height: 106px;
+      transform: none;
+    }
   }
 
   &--weight-gain::before {
     @include pseudo-decor(67px, 50px, url("../../icons/stack.svg#program2"));
     top: 24px;
     left: 13px;
+
+    @media (min-width: $tablet-width) {
+      top: 91px;
+      right: 29px;
+      left: auto;
+      width: 268px;
+      height: 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 47px;
+      right: auto;
+      left: 33px;
+      width: 134px;
+      height: 100px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 52px;
+    padding-bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding: 59px 52px;
   }
 }
 
 .programs__caption {
-  margin: 30px 0 0 90px;
+  margin: 0;
+  margin-top: 12px;
+  margin-left: 70px;
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 25px;
+    margin-left: 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 18px;
+    margin-left: 162px;
+  }
+}
+
+.programs__description {
+  margin: 0;
+  margin-top: 29px;
+  margin-bottom: 19px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid $divider-grey;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 24px;
+    margin-bottom: 52px;
+    width: 340px;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin-top: 73px;
+    margin-bottom: 27px;
+  }
 }
 
 .programs__link {
   position: relative;
   height: 24px;
   font-family: $secondary-font;
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 20px;
+  line-height: 30px;
   text-decoration: none;
   text-transform: uppercase;
   color: $black;
 
   &::after {
     @include pseudo-decor(24px, 12px, url("../../icons/stack.svg#arrow"));
-    top: 6px;
+    top: 8px;
     right: -39px;
     transition: transform 0.3s linear;
     transform-origin: left center;
+
+    @media (min-width: $tablet-width) {
+      right: -50px;
+    }
   }
 
   &:is(:hover, :active, :focus, :focus-visible)::after {

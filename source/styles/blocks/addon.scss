@@ -1,11 +1,87 @@
+.addon {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "title  info"
+      "button button";
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .addon__title {
+  margin: 0;
   font-family: $secondary-font;
   font-size: 16px;
+  font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
   color: #222222;
+
+  @media (min-width: $tablet-width) {
+    grid-area: title;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .addon__list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 13px;
   line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: info;
+    justify-self: flex-end;
+    justify-content: flex-start;
+    margin-top: 0;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+  }
+}
+
+.addon__size {
+  @media (min-width: $desktop-width) {
+    min-width: 131px;
+  }
+}
+
+.addon__price {
+  @media (min-width: $tablet-width) {
+    min-width: 42px;
+    margin-left: 50px;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 112px;
+    text-align: start;
+  }
+}
+
+.addon__link {
+  display: block;
+  margin-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: button;
+    margin-top: 25px;
+    padding: 10px 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+    margin-top: 0;
+    margin-left: 40px;
+  }
 }

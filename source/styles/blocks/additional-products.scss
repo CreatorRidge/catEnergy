@@ -1,12 +1,114 @@
+.additional-products__wrapper {
+  padding: 0 20px;
+  padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    padding-top: 74px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    margin: auto;
+    padding: 0;
+    padding-top: 71px;
+  }
+}
+
 .additional-products__title {
+  margin: 0;
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+.additional-products__container {
+  margin-top: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: stretch;
+    gap: 80px;
+    margin-top: 80px;
+  }
+}
+
+.additional-products__list {
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    outline: 1px solid $border-grey;
+    outline-offset: -1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    outline: none;
+  }
+}
+
+.additional-products__item {
+  padding-top: 12px;
+  padding-bottom: 19px;
+  border-top: 1px solid $border-grey;
+
+  &:last-child {
+    border-bottom: 1px solid $border-grey;
+
+    @media (min-width: $tablet-width) {
+      border-bottom: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-bottom: 1px solid $border-grey;
+    }
+  }
+
+  &:first-child {
+    @media (min-width: $tablet-width) {
+      border-top: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-top: 1px solid $border-grey;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 0;
+    padding-bottom: 16px;
+  }
 }
 
 .additional-products__special-deal {
-  height: 290px;
-  background: url("../../images/catalog/background-catalog-mobile@1x.jpg") center no-repeat;
-  background-size: contain;
+  margin-top: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
 }
