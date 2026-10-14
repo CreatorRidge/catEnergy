@@ -37,27 +37,40 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    gap: 141px 60px;
+    gap: 60px;
     grid-template-columns: 1fr 1fr;
-    margin-top: 165px;
+    margin-top: 84px;
   }
 
   @media (min-width: $desktop-width) {
-    gap: 144px 80px;
+    gap: 63px 80px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
 .catalog__item {
   padding: 20px;
-  padding-top: 19px;
-  padding-bottom: 25px;
+  padding-bottom: 23px;
   border-top: 1px solid #ebebeb;
 
   @media (min-width: $tablet-width) {
     padding-top: 20px;
-    background-color: $basic-grey;
     border-top: none;
+
+    &:not(:last-child) {
+      background-image:
+        linear-gradient(
+          to bottom,
+          $white 0%,
+          $white 81px,
+          $basic-grey 81px,
+          $basic-grey 100%
+        );
+    }
+
+    &:last-child {
+      margin-top: 82px;
+    }
   }
 }
 

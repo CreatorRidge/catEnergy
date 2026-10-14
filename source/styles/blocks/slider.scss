@@ -1,14 +1,28 @@
-.slider {
-  display: flex;
-  flex-direction: row;
-  width: auto;
+.slider__image--before {
+  z-index: 2;
+  clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+}
+
+.slider__image--after {
+  z-index: 1;
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+}
+
+.slider__control {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  transform: translateX(50%);
 }
 
 .slider__control-button {
   position: relative;
-  padding: 0;
   width: 4px;
   height: 100%;
+  padding: 0;
   background-color: $accent-grey;
   border: none;
 

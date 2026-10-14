@@ -1,45 +1,9 @@
 .contacts {
   display: flex;
-  align-items: center;
   flex-direction: column;
-
-  &::before {
-    order: 2;
-    display: block;
-    width: 100%;
-    height: 362px;
-    background-image: url("../../images/location-mobile@1x.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    content: "";
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../images/location-mobile@2x.jpg");
-    }
-
-    @media (min-width: $tablet-width) {
-      height: 400px;
-      background-image: url("../../images/location-tablet@1x.jpg");
-    }
-
-    @media (min-width: $tablet-width) and (min-resolution: 2dppx) {
-      background-image: url("../../images/location-tablet@2x.jpg");
-    }
-
-    @media (min-width: $desktop-width) {
-      height: 400px;
-      background-image: url("../../images/location-desktop@1x.jpg");
-    }
-
-    @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
-      background-image: url("../../images/location-desktop@2x.jpg");
-    }
-  }
 }
 
 .contacts__wrapper {
-  align-self: stretch;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
@@ -112,5 +76,16 @@
   @media (min-width: $desktop-width) {
     align-items: flex-start;
     text-align: start;
+  }
+}
+
+.contacts-map {
+  display: block;
+  width: 100%;
+  height: 362px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
   }
 }

@@ -23,6 +23,13 @@
       left: 0;
     }
   }
+
+  @media (max-width: $mobile-width-only) {
+    &:has(.main-nav--nojs) {
+      display: grid;
+      height: auto;
+    }
+  }
 }
 
 .main-header__logo {
