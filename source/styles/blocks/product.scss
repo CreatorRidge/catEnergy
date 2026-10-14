@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 0 37px 40px;
+    padding: 10px 37px 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,16 +26,7 @@
 }
 
 .product__link-image {
-  justify-self: center;
   grid-area: image;
-
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    top: -70px;
-    right: 0;
-    left: 0;
-    margin: 0 auto;
-  }
 }
 
 .product__image {
@@ -64,7 +55,7 @@
 
     @media (min-width: $tablet-width) {
       width: 135px;
-      margin-top: 161px;
+      margin-top: 150px;
     }
 
     @media (min-width: $desktop-width) {
@@ -74,7 +65,7 @@
 
   @media (min-width: $tablet-width) {
     width: 135px;
-    margin-top: 161px;
+    margin-top: 22px;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
@@ -82,7 +73,7 @@
 
   @media (min-width: $desktop-width) {
     width: 140px;
-    margin-top: 151px;
+    margin-top: 12px;
   }
 }
 
@@ -91,13 +82,13 @@
   grid-area: info;
   display: flex;
   flex-direction: column;
-  gap: 6px;
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 16px;
 
   @media (min-width: $tablet-width) {
     align-self: stretch;
+    gap: 6px;
     margin-top: 21px;
     margin-bottom: 33px;
     font-size: 16px;

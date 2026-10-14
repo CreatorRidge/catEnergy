@@ -2,22 +2,25 @@
   background-color: $light-grey;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-areas: "featuresstack";
-  }
-}
-
-.case__overlay {
-  @media (min-width: $tablet-width) {
-    grid-area: featuresstack;
-    align-self: start;
-    height: 619px;
-    background-color: $white;
+    background-image:
+      linear-gradient(
+        to bottom,
+        $white 0%,
+        $white 619px,
+        $light-grey 619px,
+        $light-grey 100%
+      );
   }
 
   @media (min-width: $desktop-width) {
-    height: 135px;
-    border-top: none;
+    background-image:
+      linear-gradient(
+        to bottom,
+        $white 0%,
+        $white 136px,
+        $light-grey 136px,
+        $light-grey 100%
+      );
   }
 }
 
@@ -180,9 +183,14 @@
 }
 
 .case__slider {
+  position: relative;
+  width: 280px;
+  height: 256px;
   margin-top: 20px;
 
   @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
     margin-top: 99px;
     margin-left: 74px;
   }
@@ -196,5 +204,11 @@
 }
 
 .case__image {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

@@ -23,7 +23,7 @@
       </picture>
       <img class="main-header__logo--text" src="images/logotype-text.svg" alt="Cat Energy" width="101" height="18">
     </a>
-    <nav class="main-header__nav main-nav">
+    <nav class="main-header__nav main-nav main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden main-nav__toggle-text">Открыть меню</span></button>
       <div class="main-nav__wrapper main-nav__wrapper--closed">
         <ul class="main-nav__list">
@@ -43,9 +43,12 @@
           <li class="catalog__item product">
             <a class="product__link-image" href="#">
               <picture>
+                <source width="169" height="210" type="image/webp" media="(min-width: 1440px)" srcset="images/catalog/catalog-1-desktop@1x.webp 1x, images/catalog/catalog-1-desktop@2x.webp 2x">
+                <source width="200" height="210" type="image/webp" media="(min-width: 768px)" srcset="images/catalog/catalog-1-tablet@1x.webp 1x, images/catalog/catalog-1-tablet@2x.webp 2x">
+                <source width="140" height="107" type="image/webp" srcset="images/catalog/catalog-1-mobile@1x.webp 1x, images/catalog/catalog-1-mobile@2x.webp 2x">
                 <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/catalog-1-desktop@1x.png 1x, images/catalog/catalog-1-desktop@2x.png 2x">
                 <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/catalog-1-tablet@1x.png 1x, images/catalog/catalog-1-tablet@2x.png 2x">
-                <img class="product__image" src="images/catalog/catalog-1-mobile@1x.png" srcset="images/catalog/catalog-1-mobile@2x.png 2x" alt="product-1" width="140" height="107">
+                <img class="product__image" src="images/catalog/catalog-1-mobile@1x.png" srcset="images/catalog/catalog-1-mobile@2x.png 2x" alt="product-1" width="140" height="107" fetchpriority="high">
               </picture>
             </a>
             <a class="product__link-title" href="#">
@@ -70,9 +73,12 @@
           <li class="catalog__item product">
             <a class="product__link-image" href="#">
               <picture>
+                <source width="169" height="210" type="image/webp" media="(min-width: 1440px)" srcset="images/catalog/catalog-2-desktop@1x.webp 1x, images/catalog/catalog-2-desktop@2x.webp 2x">
+                <source width="200" height="210" type="image/webp" media="(min-width: 768px)" srcset="images/catalog/catalog-2-tablet@1x.webp 1x, images/catalog/catalog-2-tablet@2x.webp 2x">
+                <source width="140" height="107" type="image/webp" srcset="images/catalog/catalog-2-mobile@1x.webp 1x, images/catalog/catalog-2-mobile@2x.webp 2x">
                 <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/catalog-2-desktop@1x.png 1x, images/catalog/catalog-2-desktop@2x.png 2x">
                 <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/catalog-2-tablet@1x.png 1x, images/catalog/catalog-2-tablet@2x.png 2x">
-                <img class="product__image" src="images/catalog/catalog-2-mobile@1x.png" srcset="images/catalog/catalog-2-mobile@2x.png 2x" alt="product-2" width="140" height="107">
+                <img class="product__image" src="images/catalog/catalog-2-mobile@1x.png" srcset="images/catalog/catalog-2-mobile@2x.png 2x" alt="product-2" width="140" height="107" fetchpriority="high">
               </picture>
             </a>
             <a class="product__link-title" href="#">
@@ -97,9 +103,12 @@
           <li class="catalog__item product">
             <a class="product__link-image" href="#">
               <picture>
+                <source width="169" height="210" type="image/webp" media="(min-width: 1440px)" srcset="images/catalog/catalog-3-desktop@1x.webp 1x, images/catalog/catalog-3-desktop@2x.webp 2x">
+                <source width="200" height="210" type="image/webp" media="(min-width: 768px)" srcset="images/catalog/catalog-3-tablet@1x.webp 1x, images/catalog/catalog-3-tablet@2x.webp 2x">
+                <source width="140" height="107" type="image/webp" srcset="images/catalog/catalog-3-mobile@1x.webp 1x, images/catalog/catalog-3-mobile@2x.webp 2x">
                 <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/catalog-3-desktop@1x.png 1x, images/catalog/catalog-3-desktop@2x.png 2x">
                 <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/catalog-3-tablet@1x.png 1x, images/catalog/catalog-3-tablet@2x.png 2x">
-                <img class="product__image" src="images/catalog/catalog-3-mobile@1x.png" srcset="images/catalog/catalog-3-mobile@2x.png 2x" alt="product-3" width="140" height="107">
+                <img class="product__image" src="images/catalog/catalog-3-mobile@1x.png" srcset="images/catalog/catalog-3-mobile@2x.png 2x" alt="product-3" width="140" height="107" loading="lazy">
               </picture>
             </a>
             <a class="product__link-title" href="#">
@@ -124,9 +133,12 @@
           <li class="catalog__item product">
             <a class="product__link-image" href="#">
               <picture>
+                <source width="169" height="210" type="image/webp" media="(min-width: 1440px)" srcset="images/catalog/catalog-4-desktop@1x.webp 1x, images/catalog/catalog-4-desktop@2x.webp 2x">
+                <source width="200" height="210" type="image/webp" media="(min-width: 768px)" srcset="images/catalog/catalog-4-tablet@1x.webp 1x, images/catalog/catalog-4-tablet@2x.webp 2x">
+                <source width="140" height="107" type="image/webp" srcset="images/catalog/catalog-4-mobile@1x.webp 1x, images/catalog/catalog-4-mobile@2x.webp 2x">
                 <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/catalog-4-desktop@1x.png 1x, images/catalog/catalog-4-desktop@2x.png 2x">
                 <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/catalog-4-tablet@1x.png 1x, images/catalog/catalog-4-tablet@2x.png 2x">
-                <img class="product__image" src="images/catalog/catalog-4-mobile@1x.png" srcset="images/catalog/catalog-4-mobile@2x.png 2x" alt="product-4" width="140" height="107">
+                <img class="product__image" src="images/catalog/catalog-4-mobile@1x.png" srcset="images/catalog/catalog-4-mobile@2x.png 2x" alt="product-4" width="140" height="107" loading="lazy">
               </picture>
             </a>
             <a class="product__link-title" href="#">
@@ -151,9 +163,12 @@
           <li class="catalog__item product">
             <a class="product__link-image" href="#">
               <picture>
+                <source width="169" height="210" type="image/webp" media="(min-width: 1440px)" srcset="images/catalog/catalog-5-desktop@1x.webp 1x, images/catalog/catalog-5-desktop@2x.webp 2x">
+                <source width="200" height="210" type="image/webp" media="(min-width: 768px)" srcset="images/catalog/catalog-5-tablet@1x.webp 1x, images/catalog/catalog-5-tablet@2x.webp 2x">
+                <source width="140" height="107" type="image/webp" srcset="images/catalog/catalog-5-mobile@1x.webp 1x, images/catalog/catalog-5-mobile@2x.webp 2x">
                 <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/catalog-5-desktop@1x.png 1x, images/catalog/catalog-5-desktop@2x.png 2x">
                 <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/catalog-5-tablet@1x.png 1x, images/catalog/catalog-5-tablet@2x.png 2x">
-                <img class="product__image" src="images/catalog/catalog-5-mobile@1x.png" srcset="images/catalog/catalog-5-mobile@2x.png 2x" alt="product-5" width="140" height="107">
+                <img class="product__image" src="images/catalog/catalog-5-mobile@1x.png" srcset="images/catalog/catalog-5-mobile@2x.png 2x" alt="product-5" width="140" height="107" loading="lazy">
               </picture>
             </a>
             </picture>
@@ -179,9 +194,12 @@
           <li class="catalog__item product">
             <a class="product__link-image" href="#">
               <picture>
+                <source width="169" height="210" type="image/webp" media="(min-width: 1440px)" srcset="images/catalog/catalog-6-desktop@1x.webp 1x, images/catalog/catalog-6-desktop@2x.webp 2x">
+                <source width="200" height="210" type="image/webp" media="(min-width: 768px)" srcset="images/catalog/catalog-6-tablet@1x.webp 1x, images/catalog/catalog-6-tablet@2x.webp 2x">
+                <source width="140" height="107" type="image/webp" srcset="images/catalog/catalog-6-mobile@1x.webp 1x, images/catalog/catalog-6-mobile@2x.webp 2x">
                 <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/catalog-6-desktop@1x.png 1x, images/catalog/catalog-6-desktop@2x.png 2x">
                 <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/catalog-6-tablet@1x.png 1x, images/catalog/catalog-6-tablet@2x.png 2x">
-                <img class="product__image" src="images/catalog/catalog-6-mobile@1x.png" srcset="images/catalog/catalog-6-mobile@2x.png 2x" alt="product-6" width="140" height="107">
+                <img class="product__image" src="images/catalog/catalog-6-mobile@1x.png" srcset="images/catalog/catalog-6-mobile@2x.png 2x" alt="product-6" width="140" height="107" loading="lazy">
               </picture>
             </a>
             <a class="product__link-title" href="#">
@@ -206,9 +224,12 @@
           <li class="catalog__item product">
             <a class="product__link-image" href="#">
               <picture>
+                <source width="169" height="210" type="image/webp" media="(min-width: 1440px)" srcset="images/catalog/catalog-7-desktop@1x.webp 1x, images/catalog/catalog-7-desktop@2x.webp 2x">
+                <source width="200" height="210" type="image/webp" media="(min-width: 768px)" srcset="images/catalog/catalog-7-tablet@1x.webp 1x, images/catalog/catalog-7-tablet@2x.webp 2x">
+                <source width="140" height="107" type="image/webp" srcset="images/catalog/catalog-7-mobile@1x.webp 1x, images/catalog/catalog-7-mobile@2x.webp 2x">
                 <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/catalog-7-desktop@1x.png 1x, images/catalog/catalog-7-desktop@2x.png 2x">
                 <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/catalog-7-tablet@1x.png 1x, images/catalog/catalog-7-tablet@2x.png 2x">
-                <img class="product__image" src="images/catalog/catalog-7-mobile@1x.png" srcset="images/catalog/catalog-7-mobile@2x.png 2x" alt="product-7" width="140" height="107">
+                <img class="product__image" src="images/catalog/catalog-7-mobile@1x.png" srcset="images/catalog/catalog-7-mobile@2x.png 2x" alt="product-7" width="140" height="107" loading="lazy">
               </picture>
             </a>
             <a class="product__link-title" href="#">
@@ -309,6 +330,7 @@
           </p>
         </div>
       </div>
+      <iframe class="contacts-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2826.486797165012!2d30.32114828290893!3d59.938315046930754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0xa24b26c0d196de71!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1791654798385!5m2!1sru!2sru" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
     </div>
     <div class="main-footer__social social">
       <ul class="social__wrapper">

@@ -70,6 +70,24 @@
   }
 }
 
+@media (max-width: $mobile-width-only) {
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+    display: block;
+  }
+
+  .main-nav--nojs .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+}
+
 .main-nav__list {
   margin: 0;
   padding: 0;
