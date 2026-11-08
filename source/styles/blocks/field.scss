@@ -14,7 +14,8 @@
     color: $basic-color-text;
   }
 
-  &:hover {
+  &:hover,
+  &:active {
     outline-color: $border-grey;
   }
 
