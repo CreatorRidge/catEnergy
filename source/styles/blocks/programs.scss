@@ -16,7 +16,7 @@
 .programs__list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 22px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -83,12 +83,11 @@
 
   @media (min-width: $tablet-width) {
     padding: 52px;
-    padding-bottom: 57px;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    padding: 59px 52px;
+    padding: 55px 52px;
   }
 }
 
@@ -98,11 +97,13 @@
   margin-left: 70px;
   font-family: $secondary-font;
   font-size: 24px;
+  font-weight: 400;
   line-height: 37px;
   text-transform: uppercase;
   color: $black;
 
   @media (min-width: $tablet-width) {
+    max-width: 400px;
     margin-top: 25px;
     margin-left: 0;
     font-size: 36px;
@@ -110,7 +111,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 18px;
+    margin-top: 22px;
     margin-left: 162px;
   }
 }
@@ -118,13 +119,11 @@
 .programs__description {
   margin: 0;
   margin-top: 29px;
-  margin-bottom: 19px;
   padding-bottom: 23px;
   border-bottom: 1px solid $divider-grey;
 
   @media (min-width: $tablet-width) {
     margin-top: 24px;
-    margin-bottom: 52px;
     width: 340px;
     padding-bottom: 0;
     border-bottom: none;
@@ -133,30 +132,34 @@
   @media (min-width: $desktop-width) {
     width: 100%;
     margin-top: 73px;
-    margin-bottom: 27px;
   }
 }
 
 .programs__link {
   position: relative;
-  height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 19px;
   font-family: $secondary-font;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 16px;
   text-decoration: none;
   text-transform: uppercase;
   color: $black;
 
   &::after {
-    @include pseudo-decor(24px, 12px, url("../../icons/stack.svg#arrow"));
-    top: 8px;
-    right: -39px;
+    flex-shrink: 0;
+    display: block;
+    width: 24px;
+    height: 12px;
+    background-image: url("../../icons/stack.svg#arrow");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
     transition: transform 0.3s linear;
     transform-origin: left center;
-
-    @media (min-width: $tablet-width) {
-      right: -50px;
-    }
   }
 
   &:is(:hover, :active, :focus, :focus-visible)::after {
@@ -165,5 +168,16 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    gap: 25px;
+    margin-top: 48px;
+    font-size: 20px;
+    line-height: 38px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 23px;
   }
 }

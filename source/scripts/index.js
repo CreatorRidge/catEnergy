@@ -84,3 +84,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   updateSlider(50);
 });
+
+document.querySelectorAll('.programm-form__label, .control-label').forEach((label) => {
+  if (label.scrollWidth > label.clientWidth) {
+    label.title = label.textContent.trim();
+  }
+});

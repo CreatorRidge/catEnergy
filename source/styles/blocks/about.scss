@@ -4,9 +4,14 @@
   font-family: $secondary-font;
   color: $white;
 
+  @media (min-width: $tablet-width) {
+    min-height: 875px;
+  }
+
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "bgone bgtwo";
+    min-height: auto;
   }
 }
 
@@ -21,10 +26,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    background: $white;
+    background: transparent;
   }
 
   @media (min-width: $desktop-width) {
+    z-index: -2;
     grid-area: bgtwo;
     height: 694px;
 
@@ -62,6 +68,7 @@
   margin-top: 27px;
   width: 260px;
   font-size: 36px;
+  font-weight: 400;
   line-height: 36px;
   text-align: center;
 
@@ -84,7 +91,6 @@
 .about__slogan {
   margin: 0;
   margin-top: 25px;
-  margin-bottom: 29px;
   line-height: 14px;
   text-align: center;
   text-transform: uppercase;
@@ -107,11 +113,14 @@
 
 .about__image {
   display: block;
-  margin-bottom: 3px;
+  margin-top: 29px;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    z-index: -1;
     align-self: center;
-    margin: 0 auto;
+    margin: 266px auto 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -125,11 +134,12 @@
 .about__link {
   display: block;
   width: 100%;
+  margin-top: 3px;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
     width: auto;
-    margin-top: 295px;
+    margin-top: 29px;
+    margin-right: auto;
     margin-left: 90px;
     padding: 14px 26px;
   }

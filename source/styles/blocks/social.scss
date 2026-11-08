@@ -22,6 +22,8 @@
 
 .social__section {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   justify-content: center;
   width: 100%;
   padding: 20px 0 19px;
@@ -33,15 +35,29 @@
 
   &--logo {
     @media (min-width: $tablet-width) {
-      justify-content: flex-start;
-      min-width: 163px;
+      flex-direction: column;
+    }
+  }
+
+  &--links {
+    flex-direction: column;
+
+    @media (min-width: $tablet-width) {
+      max-width: 150px;
+      margin-left: 40px;
+    }
+  }
+
+  &--copyright {
+    @media (min-width: $tablet-width) {
+      max-width: 200px;
     }
   }
 
   @media (min-width: $tablet-width) {
     align-items: center;
     width: auto;
-    height: 37px;
+    min-height: 37px;
     padding: 0;
     border-bottom: none;
   }
@@ -66,10 +82,15 @@
   &:active {
     background-color: #6b6b6b;
   }
+
+  @media (min-width: $tablet-width) {
+    height: 28px;
+  }
 }
 
 .social__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
   margin: 0;
@@ -80,6 +101,10 @@
 .social__item {
   width: 28px;
   height: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 3px;
+  }
 }
 
 .social__link {
@@ -121,7 +146,7 @@
 .social__copyright-link {
   display: flex;
   align-items: center;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
   font-size: 16px;

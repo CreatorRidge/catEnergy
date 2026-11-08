@@ -139,34 +139,39 @@
 }
 
 .programm-form__label {
+  max-width: 95px;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   @media (min-width: $tablet-width) {
+    max-width: 300px;
     font-size: 20px;
     line-height: 30px;
   }
 }
 
 .programm-form__input {
-  width: 100%;
+  flex: 1;
   background-position: right 15px center;
   background-repeat: no-repeat;
 
   &--email {
+    padding-right: 40px;
     background-image: url("../../icons/stack.svg#email");
     background-size: 17px 13px;
   }
 
   &--phone {
+    padding-right: 40px;
     background-image: url("../../icons/stack.svg#phone");
     background-size: 17px 13px;
   }
 
   &--comment {
-    width: 100%;
     min-height: 150px;
     padding: 14px;
     resize: none;

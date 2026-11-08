@@ -1,6 +1,9 @@
 .main-nav {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  gap: 10px;
+  justify-content: end;
   font-family: $secondary-font;
   font-size: 20px;
   line-height: 20px;
@@ -95,12 +98,15 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    gap: 33px;
+    flex-wrap: wrap;
+    gap: 10px 33px;
     height: 100%;
-    margin-right: 4px;
+    margin-right: 6px;
   }
 
   @media (min-width: $desktop-width) {
+    justify-content: end;
+    max-width: 600px;
     margin-right: 0;
   }
 }
@@ -115,6 +121,18 @@
     padding-top: 14px;
     padding-bottom: 12px;
     border-bottom: none;
+
+    &--current {
+      padding-bottom: 8px;
+      margin-bottom: 2px;
+      border-bottom: 2px solid $accent-green;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .page__body--index &--current {
+      border-color: $white;
+    }
   }
 }
 
