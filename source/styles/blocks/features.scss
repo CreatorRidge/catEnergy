@@ -46,7 +46,7 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    counter-reset: feature-counter; //
+    counter-reset: feature-counter;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 37px 57px;
@@ -63,35 +63,60 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
-  min-height: 60px;
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: 60px 60px;
+  gap: 20px;
 
-  &--substances {
+  &::after {
+    display: block;
+    width: 60px;
+    height: 60px;
+    content: "";
+    background-color: $accent-green;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px 28px;
+  }
+
+  &--substances::after {
     background-image: url("../../icons/stack.svg#features1");
   }
 
-  &--powder {
+  &--powder::after {
     background-image: url("../../icons/stack.svg#features2");
+
+    @media (min-width: $tablet-width) {
+      background-size: 26px 29px;
+    }
   }
 
-  &--mealtime {
+  &--mealtime::after {
     background-image: url("../../icons/stack.svg#features3");
+
+    @media (min-width: $tablet-width) {
+      background-size: 25px 30px;
+    }
   }
 
-  &--period {
+  &--period::after {
     background-image: url("../../icons/stack.svg#features4");
+
+    @media (min-width: $tablet-width) {
+      background-size: 26px 31px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     position: relative;
+    flex-direction: column;
     align-items: flex-start;
+    gap: 31px;
     min-height: 280px;
-    background-position: left top 40px;
-    background-size: 80px 80px;
     counter-increment: feature-counter;
+
+    &::after {
+      width: 80px;
+      height: 80px;
+      margin-top: 40px;
+    }
 
     &::before {
       content: counter(feature-counter);
@@ -117,12 +142,12 @@
 }
 
 .features__description {
+  order: 2;
+  flex: 1 1 0;
   margin: 0;
-  margin-left: 80px;
 
   @media (min-width: $tablet-width) {
     width: 245px;
-    margin-top: 150px;
     margin-left: 0;
   }
 }
