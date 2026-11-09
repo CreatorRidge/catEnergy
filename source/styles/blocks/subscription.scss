@@ -63,23 +63,21 @@
     background-color: $white;
 
     &::before {
+      @include center-y;
       position: absolute;
-      top: 50%;
       right: calc(100% + 40px);
       width: max(calc((100vw - 1220px) / 2), 0px);
       margin: 0;
-      transform: translateY(-50%);
     }
 
     &::after {
+      @include center-y;
       position: absolute;
-      top: 50%;
       right: 0;
       left: 0;
       z-index: -1;
       width: 100vw;
       margin: 0;
-      transform: translateY(-50%);
     }
   }
 }

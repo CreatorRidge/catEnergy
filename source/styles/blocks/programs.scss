@@ -37,16 +37,17 @@
   background-color: $basic-grey;
 
   &--weight-loss::before {
-    @include pseudo-decor(50px, 53px, url("../../icons/stack.svg#program1"));
+    @include pseudo-decor(36px, 50px, url("../../icons/stack.svg#program1"));
+    z-index: 1;
     top: 21px;
-    left: 20px;
+    left: 27px;
 
     @media (min-width: $tablet-width) {
       top: 81px;
-      right: 63px;
+      right: 93px;
       left: auto;
-      width: 200px;
-      height: 211px;
+      width: 140px;
+      height: 194px;
     }
 
     @media (min-width: $desktop-width) {
@@ -55,21 +56,45 @@
       left: 52px;
       width: 100px;
       height: 106px;
-      transform: none;
+    }
+  }
+
+  &--weight-loss::after {
+    @include pseudo-block(50px, 50px);
+    top: 24px;
+    left: 20px;
+    background-color: $accent-green;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      top: 92px;
+      right: 63px;
+      left: auto;
+      width: 200px;
+      height: 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 47px;
+      right: auto;
+      left: 52px;
+      width: 100px;
+      height: 100px;
     }
   }
 
   &--weight-gain::before {
-    @include pseudo-decor(67px, 50px, url("../../icons/stack.svg#program2"));
-    top: 24px;
+    @include pseudo-decor(67px, 28px, url("../../icons/stack.svg#program2"));
+    z-index: 1;
+    top: 35px;
     left: 13px;
 
     @media (min-width: $tablet-width) {
-      top: 91px;
+      top: 135px;
       right: 29px;
       left: auto;
       width: 268px;
-      height: 200px;
+      height: 112px;
     }
 
     @media (min-width: $desktop-width) {
@@ -77,6 +102,30 @@
       right: auto;
       left: 33px;
       width: 134px;
+      height: 100px;
+    }
+  }
+
+  &--weight-gain::after {
+    @include pseudo-block(50px, 50px);
+    top: 24px;
+    left: 21px;
+    background-color: $accent-green;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      top: 92px;
+      right: 63px;
+      left: auto;
+      width: 200px;
+      height: 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 47px;
+      right: auto;
+      left: 52px;
+      width: 100px;
       height: 100px;
     }
   }
@@ -177,7 +226,7 @@
     line-height: 38px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin-top: 23px;
   }
 }
