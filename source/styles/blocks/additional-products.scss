@@ -1,18 +1,15 @@
 .additional-products__wrapper {
-  padding: 0 20px;
-  padding-top: 25px;
+  padding: 25px 20px 20px;
   overflow: visible;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
-    padding-top: 74px;
+    padding: 74px 30px 40px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1220px;
     margin: auto;
-    padding: 0;
-    padding-top: 71px;
+    padding: 71px 0 48px;
   }
 }
 

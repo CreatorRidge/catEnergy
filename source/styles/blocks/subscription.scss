@@ -5,16 +5,16 @@
 }
 
 .subscription__wrapper {
-  padding: 40px 20px;
+  padding: 20px 20px 40px;
 
   @media (min-width: $tablet-width) {
-    padding: 80px 30px;
+    padding: 40px 30px 80px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1220px;
     margin: auto;
-    padding: 96px 0 104px;
+    padding: 48px 0 104px;
   }
 }
 
